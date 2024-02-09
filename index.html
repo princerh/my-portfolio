@@ -18,6 +18,10 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
   rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
    <!-- Customize Styles  -->
    <style>
     .poppins{
@@ -26,6 +30,20 @@
     .garamond {
       font-family: 'EB Garamond', serif;
     }
+.paragraph {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+@layer keyframes {
+    .slidein {
+      from {
+        transform: translateY(0%);
+      }
+      to {
+        transform: translateY(100%);
+      }
+    }
+  }
   </style>
 
     <!-- Customize your file  -->
@@ -63,9 +81,10 @@
         
     </header> -->
 
-    <header class="container mx-auto poppins">
+    <header class="container mx-auto bg-[#FFF8F3] ">
 
-        <div class="navbar bg-base-100 flex justify-between">
+        <div class="poppins">
+          <div class="navbar bg-base-100 flex justify-between bg-[#FFF8F3] shadow-sm">
             <div class="">
                 <details class="dropdown  lg:hidden">
                     <summary class="m-1 btn bg-transparent border-none shadow-none"><i class="fa-solid fa-bars"></i></summary>
@@ -73,7 +92,7 @@
                         <li><a href="">Home</a></li>
                         <li><a href="">Portfolio</a></li>
                         <li><a href="">Skills</a></li>
-                        <li><a href="">Training</a></li>
+                        <li><a href="#training">Training</a></li>
                         <li><a href="">Research</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -84,7 +103,7 @@
               <li><a href="">Home</a></li>
           <li><a href="">Portfolio</a></li>
           <li><a href="">Skills</a></li>
-          <li><a href="">Training</a></li>
+          <li><a href="#training">Training</a></li>
           <li><a href="">Research</a></li>
           <li><a href="">Contact</a></li>
                 </ul>
@@ -105,14 +124,56 @@
                 <svg class="swap-off fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
                 
               </label>
-              <a href="./RESUME_Reazul_Hasan_Prince_ECE_17_RUET.pdf" download="" class="hover:text-red-500 mr-8 lg:mr-5 hover:transform hover:scale-110 ">Download CV</a>
+              <a href="./files/RESUME_Reazul_Hasan_Prince_ECE_17_RUET.pdf" download="" class="hover:text-red-500 mr-8 lg:mr-5 hover:transform hover:scale-110 ">Download CV</a>
             </div>
           </div>
-
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+          <div class="text-black flex flex-col my-auto lg:pl-12 p-6 lg:w-2/3">
+            <h6 class="garamond text-xl lg:text-2xl">Hi, I am</h6>
+            <h2 class="garamond text-xl lg:text-3xl ">Reazul Hasan Prince</h2>
+            <p class="lg:pr-6 text-justify mt-7 poppins leading-5">I recently graduated from RUET's Electrical & Computer Engineering Department, where I gained expertise in both computer and electrical engineering. During university, I decided to pursue a career in the power division industry, specifically in electrical engineering. To prepare for this path, I underwent training in power system operation and control at Ashuganj Power Division Company.
+<br>
+            In addition to my practical experience, I conducted research in AI-based classification algorithms during my academic journey. Outside of academics, football is my main hobby. I enjoy playing with friends and watching European league matches. Traveling is another passion of mine, as it allows me to meet new people and enhance my communication skills.
+               </p>
+          </div>
+          <div class=" w-2/3 lg:w-1/3 border">
+            <img class=" w-full border" src="./images/pic.png" alt="">
+          </div>
+        </div>
     </header>
+    
 
-    <main>
-
+    <main class="container mx-auto">
+      <section class="my-10 space-y-3 mx-1" id="training"> 
+        <h1 class="text-xl lg:text-3xl text-center font-extrabold text-black">Training Summary </h1>
+        <table class="lg:w-10/12 mx-auto">
+          <thead>
+            <tr class="border-2 text-center text-[15px] lg:text-xl text-black lg:font-semibold border-black">
+              <th class="border-2 w-1/5 border-black">Training Title </th>
+              <th class="border-2 w-1/5 border-black">Topic</th>
+              <th class="border-2 w-1/5  border-black">Institute</th>
+              <th class="border-2 w-1/5 border-black">Country</th>
+              <th class="border-2 w-1/5  border-black">Date</th>
+            </tr>
+          </thead>
+          <tbody class="text-center text-black text-[10px] lg:text-xs font-bold poppins">
+            <tr>
+              <td class="border-2 border-black p-1 w-1/5">Industrial Attachment</td>
+              <td class="border-2 border-black p-1 w-1/5">Power System Control & Operation, Power Station & Switchgear</td>
+                <td class="border-2 border-black p-1 w-1/5">Ashuganj Power Station 
+                  Company Limited (APSCL)</td>
+              <td class="border-2 border-black p-1 w-1/5">Bangladesh</td>
+              <td class="border-2 border-black p-1 w-1/5">April 10, 2022</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <h2 class=" mb-3 text-xs text-red-600 font-extrabold hover:scale-125 hover:text-pink-600 hover:font-extrabold" >Download My Training Report</h2>
+        
+          <a class="text-white text-xs bg-[#FD6E0A] font-bold rounded-md mx-auto p-2 flex flex-row justify-center gap-1 w-fit items-center text-center " href="./files/Attachment Report (1).pdf" download=""><i class="fa-solid fa-cloud-arrow-down text-xs"></i> Download Now</a>
+        </div>
+      </section>
     </main>
     <footer>
 
