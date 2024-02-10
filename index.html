@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome To My Portfolio</title>
 
-    <!-- Tailwind and DaisyUI import from CDN  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind and DaisyUI import from CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- your kits -->
-    <script src="https://kit.fontawesome.com/3d5f563f9e.js" crossorigin="anonymous"></script>
-    
-<!-- Font import from Google  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
-  rel="stylesheet">
+  <!-- your kits -->
+  <script src="https://kit.fontawesome.com/3d5f563f9e.js" crossorigin="anonymous"></script>
+
+  <!-- Font import from Google  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 
-   <!-- Customize Styles  -->
-   <style>
-    .poppins{
+  <!-- Customize Styles  -->
+  <style>
+    .poppins {
       font-family: 'Poppins', sans-serif;
     }
+
     .garamond {
       font-family: 'EB Garamond', serif;
     }
-.paragraph {
-  font-family: 'PT Sans Narrow', sans-serif;
-}
 
+    .paragraph {
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
   </style>
 
-    <!-- Customize your file  -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        'primary-color': '#FF4240',
-                    }
-                }
-            }
+  <!-- Customize your file  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#FF4240',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 
 </head>
+
 <body>
-    <!-- <header class="container max-w-2xl mx-auto">
+  <!-- <header class="container max-w-2xl mx-auto">
 <nav class="flex justify-between mt-4">
 <div class="flex list-none justify-between items-center space-x-4">
         <li class=" border px-2 hover:bg-slate-200"><a href="">Home</a></li>
@@ -71,175 +74,78 @@
         
     </header> -->
 
-    <header class="container mx-auto bg-[#FFF8F3] ">
+  <header class="container mx-auto bg-[#FFF8F3] ">
 
-        <div class="poppins">
-          <div class="navbar bg-base-100 flex justify-between bg-[#FFF8F3] shadow-sm">
-            <div class="">
-                <details class="dropdown  lg:hidden">
-                    <summary class="m-1 btn bg-transparent border-none shadow-none"><i class="fa-solid fa-bars"></i></summary>
-                    <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Portfolio</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#training">Training</a></li>
-                        <li><a href="#research">Research</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                  </details>
-
-              <div class="hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
+    <div class="poppins">
+      <div class="navbar bg-base-100 flex justify-between bg-[#FFF8F3] shadow-sm">
+        <div class="">
+          <details class="dropdown  lg:hidden">
+            <summary class="m-1 btn bg-transparent border-none shadow-none"><i class="fa-solid fa-bars"></i></summary>
+            <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
               <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#training">Training</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#training">Training</a></li>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </details>
 
-            </div>
-            
-            <div class="  mr-4 lg:mr-0 flex items-center">
-              
-              <a href="./files/RESUME_Reazul_Hasan_Prince_ECE_17_RUET.pdf" download="" class="hover:text-red-500 mr-8 lg:mr-5 hover:transform hover:scale-110 "> <i class="fa-solid fa-circle-arrow-down animate-bounce mr-2 "></i>Download CV</a>
-            </div>
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#training">Training</a></li>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
+
         </div>
-        <div class="flex flex-col lg:flex-row justify-between items-center">
-          <div class="text-black flex flex-col my-auto lg:pl-12 p-6 lg:w-2/3">
-            <h6 class="garamond font-bold text-xl lg:text-2xl">Hi, I am</h6>
-            <h2 class="garamond font-bold text-2xl lg:text-3xl ">Reazul Hasan Prince</h2>
-            <p class="lg:pr-6 text-justify mt-7 poppins leading-5">I recently graduated from RUET majoring in department of Electrical & Computer Engineering, where I gained expertise in both computer and electrical engineering. During university, I decided to pursue a career in the power division industry, specifically in electrical engineering. To prepare for this path, I underwent training in power system operation and control at Ashuganj Power Division Company.
-<br>
-            In addition to my practical experience, I conducted research in AI-based classification algorithms during my academic journey. Outside of academics, football is my main hobby. I enjoy playing with friends and watching European league matches. Traveling is another passion of mine, as it allows me to meet new people and enhance my communication skills.
-               </p>
-          </div>
-          <div class=" w-2/3 lg:w-1/3 ">
-            <img class=" w-full  " src="./images/pic.png" alt="">
-          </div>
+
+        <div class="  mr-4 lg:mr-0 flex items-center">
+
+          <a href="./files/RESUME_Reazul_Hasan_Prince_ECE_17_RUET.pdf" download=""
+            class="hover:text-red-500 mr-8 lg:mr-5 hover:transform hover:scale-110 "> <i
+              class="fa-solid fa-circle-arrow-down animate-bounce mr-2 "></i>Download CV</a>
         </div>
-    </header>
-    
-
-    <main class="container mx-auto">
-      <section class="my-10 mx-2 lg:mx-0 space-y-3" id="training"> 
-        <h1 class="text-xl lg:text-3xl text-center font-extrabold text-black">TRAINING SUMMARY  </h1>
-        <table class="lg:w-10/12 mx-auto">
-          <thead>
-            <tr class="border-2 text-center text-[15px] lg:text-xl text-black lg:font-semibold border-black">
-              <th class="border-2 w-1/5 border-black">Training Title </th>
-              <th class="border-2 w-1/5 border-black">Topic</th>
-              <th class="border-2 w-1/5  border-black">Institute</th>
-              <th class="border-2 w-1/5 border-black">Country</th>
-              <th class="border-2 w-1/5  border-black">Date</th>
-            </tr>
-          </thead>
-          <tbody class="text-center text-black text-[10px] lg:text-xs font-bold poppins">
-            <tr>
-              <td class="border-2 border-black p-1 w-1/5">Industrial Attachment</td>
-              <td class="border-2 border-black p-1 w-1/5">Power System Control & Operation, Power Station & Switchgear</td>
-                <td class="border-2 border-black p-1 w-1/5">Ashuganj Power Station 
-                  Company Limited (APSCL)</td>
-              <td class="border-2 border-black p-1 w-1/5">Bangladesh</td>
-              <td class="border-2 border-black p-1 w-1/5">April 10, 2022</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="text-center">
-          <h2 class=" mb-3 text-xs text-red-600 font-extrabold hover:scale-105 lg:hover:scale-110 hover:text-pink-600 hover:font-bold lg:hover:font-extrabold">Download My Training Report</h2>
-        
-          <a class="text-white text-xs bg-[#FD6E0A] font-bold rounded-md mx-auto p-2 flex flex-row justify-center gap-1 w-fit items-center text-center " href="./files/Attachment Report (1).pdf" download=""><i class="fa-solid fa-cloud-arrow-down text-xs"></i> Download Now</a>
-        </div>
-      </section>
+      </div>
+    </div>
+    <div class="flex flex-col lg:flex-row justify-between items-center">
+      <div class="text-black flex flex-col my-auto lg:pl-12 p-6 lg:w-2/3">
+        <h6 class="garamond font-bold text-xl lg:text-2xl">Hi, I am</h6>
+        <h2 class="garamond font-bold text-2xl lg:text-3xl ">Reazul Hasan Prince</h2>
+        <p class="lg:pr-6 text-justify mt-7 poppins leading-5">I recently graduated from RUET majoring in department of
+          Electrical & Computer Engineering, where I gained expertise in both computer and electrical engineering.
+          During university, I decided to pursue a career in the power division industry, specifically in electrical
+          engineering. To prepare for this path, I underwent training in power system operation and control at Ashuganj
+          Power Division Company.
+          <br>
+          In addition to my practical experience, I conducted research in AI-based classification algorithms during my
+          academic journey. Outside of academics, football is my main hobby. I enjoy playing with friends and watching
+          European league matches. Traveling is another passion of mine, as it allows me to meet new people and enhance
+          my communication skills.
+        </p>
+      </div>
+      <div class=" w-2/3 lg:w-1/3 ">
+        <img class=" w-full  " src="./images/pic.png" alt="">
+      </div>
+    </div>
+  </header>
 
 
-      <section class="my-10" id="skills">
-        <div>
-          <h1 class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black">TECHNICAL SKILLS & INTERESTS</h1>
-          <div class="grid grid-cols-1  lg:grid-cols-3 gap-10 lg:gap-4 p-4 lg:p-0">
-            <div class="card card-compact flex flex-col justify-between bg-base-100 shadow-xl">
-              <div class="flex justify-center">
-                <div class=" border"><img class="w-20 h-16" src="./images/pngegg (1).png" alt=""></div>
-              </div>
-              <div class="card-body">
-                <h4 class="lg:text-xl font-bold poppins">MatLab SimuLink</h4>
-              <p class="text-justify">I have used matlab simulink during my academic life to experience various power electronics  circuit and to observe the current voltage relationship in the nodes by using multi meter, voltmeter, ammeter.</p>
-              <p class="text-xs font-medium ">Power System Simulation:<a class="link ml-1" href="https://drive.google.com/drive/u/1/folders/17d1whSFg2QFQ76CFVRgLu0sEMv-cVD4E" target="_blank">Click Here</a></p>
-              <p class="text-xs font-medium ">Power Electronics Simulation: <a class="link ml-1" href="https://drive.google.com/drive/folders/1yXPOLu1njw6ggpdueSdtqF9Iy2Tcax0T" target="_blank">Click Here</a></p>
-                </div>
-              </div>
-            
-
-            
-              <div class="card card-compact flex flex-col justify-between  bg-base-100 shadow-xl">
-                <div class="flex justify-center">
-                  <div class=" border"><img class="w-20 h-16" src="./images/proteas.jpg" alt=""></div>
-                </div>
-                <div class="card-body">
-                  <h4 class="lg:text-xl font-bold poppins">Proteas Simulator</h4>
-                <p class="text-justify">Proteas Simulator was used to perform the measurement of resistance, capacitance and inductance of various electrical circuit.</p>
-                <p class="text-xs font-medium">Measurement Simulation: <a class="link ml-1" href="https://drive.google.com/drive/folders/1JKNFV7Se8DV2YmnartkfWq7_aXXI8HIN" target="_blank">Click Here</a></p>
-                  </div>
-                </div>
-              
-
-              
-                <div class="card card-compact flex flex-col justify-between bg-base-100 shadow-xl">
-                  <div class="flex justify-center">
-                    <div class=" border"><img class="w-20 h-16" src="./images/3463652.png" alt=""></div>
-                  </div>
-                  <div class="card-body">
-                    <h4 class="lg:text-xl font-bold poppins">Circuit Solving</h4>
-                  <p class="text-justify">In analogue circuit and system course, various types of electrical circuit was solved applying various electrical principles like KVL, KCL, Superposition theorem, Thevenin's theorem ele. Various types of filter. Various types of circuit like Resonant circuit, RC circuit, RL circuit, RLC circuit were introduced.</p>
-                  
-                    </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mt-8 flex flex-col lg:flex-row gap-20 items-center ml-10">
-                  <div>
-                    <h2 class="text2xl font-bold">Some Professional and Interpersonal Skills:</h2>
-                    <ul class="ml-5 ">
-                      <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Microsoft Office</li>
-                      <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Adobe Photoshop</li>
-                      <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Adobe Illustrator</li>
-                      <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Video Editing</li>
-                      <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Good Communication</li>
-                      <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Team Work</li>
-                      <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Leadership</li>
-                    </ul>
-                  </div>
-
-                  
-                    <div>
-                      <h2 class="text2xl font-bold">Course Work:</h2>
-                      <ul class="ml-5">
-                        <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Circuits and Systems I & II </li>
-                        <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Analogue Electronic Circuits I & II</li>
-                        <li class="list-decimal hover:transform hover:font-bold cursor-pointer"> Electrical Machines I & 
-                          II</li>
-                        <li class="list-decimal hover:transform hover:font-bold cursor-pointer"> Power Station, Switchgear and Protection</li>
-                        <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power System</li>
-                        <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power System Operation 
-                          and Control</li>
-                        <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power Electronics</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-      </section>
+  <main class="container mx-auto">
 
 
-      <section class="my-10">
-        <h1 id="education" class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black"><i class="fa-solid fa-graduation-cap mr-1 lg:mr-2"></i>EDUCATIONAL QUALIFICATIONS</h1>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 text-xs text-center px-4 lg:px-0">
-        
+    <section class="my-10">
+      <h1 id="education" class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black"><i
+          class="fa-solid fa-graduation-cap mr-1 lg:mr-2"></i>EDUCATIONAL QUALIFICATIONS</h1>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 text-xs text-center px-4 lg:px-0">
+
         <div class="border border-black rounded-lg p-4">
           <h4 class="text-xs font-semibold text-black">BSc. in Electrical & Computer Engineering</h4>
           <p class="text-black">Rajshahi University of Engineering & Technology (RUET)</p>
@@ -263,131 +169,274 @@
           <p class="text-black">GPA 5.00/5.00</p>
         </div>
 
+      </div>
+    </section>
+
+
+
+    <section class="my-10" id="skills">
+      <div>
+        <h1 class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black">TECHNICAL SKILLS & INTERESTS</h1>
+        <div class="grid grid-cols-1  lg:grid-cols-3 gap-10 lg:gap-4 p-4 lg:p-0">
+          <div class="card card-compact flex flex-col justify-between bg-base-100 shadow-xl">
+            <div class="flex justify-center">
+              <div class=" border"><img class="w-20 h-16" src="./images/pngegg (1).png" alt=""></div>
+            </div>
+            <div class="card-body">
+              <h4 class="lg:text-xl font-bold poppins">MatLab SimuLink</h4>
+              <p class="text-justify">I have used matlab simulink during my academic life to experience various power
+                electronics circuit and to observe the current voltage relationship in the nodes by using multi meter,
+                voltmeter, ammeter.</p>
+              <p class="text-xs font-medium ">Power System Simulation:<a class="link ml-1"
+                  href="https://drive.google.com/drive/u/1/folders/17d1whSFg2QFQ76CFVRgLu0sEMv-cVD4E"
+                  target="_blank">Click Here</a></p>
+              <p class="text-xs font-medium ">Power Electronics Simulation: <a class="link ml-1"
+                  href="https://drive.google.com/drive/folders/1yXPOLu1njw6ggpdueSdtqF9Iy2Tcax0T" target="_blank">Click
+                  Here</a></p>
+            </div>
+          </div>
+
+
+
+          <div class="card card-compact flex flex-col justify-between  bg-base-100 shadow-xl">
+            <div class="flex justify-center">
+              <div class=" border"><img class="w-20 h-16" src="./images/proteas.jpg" alt=""></div>
+            </div>
+            <div class="card-body">
+              <h4 class="lg:text-xl font-bold poppins">Proteas Simulator</h4>
+              <p class="text-justify">Proteas Simulator was used to perform the measurement of resistance, capacitance
+                and inductance of various electrical circuit.</p>
+              <p class="text-xs font-medium">Measurement Simulation: <a class="link ml-1"
+                  href="https://drive.google.com/drive/folders/1JKNFV7Se8DV2YmnartkfWq7_aXXI8HIN" target="_blank">Click
+                  Here</a></p>
+            </div>
+          </div>
+
+
+
+          <div class="card card-compact flex flex-col justify-between bg-base-100 shadow-xl">
+            <div class="flex justify-center">
+              <div class=" border"><img class="w-20 h-16" src="./images/3463652.png" alt=""></div>
+            </div>
+            <div class="card-body">
+              <h4 class="lg:text-xl font-bold poppins">Circuit Solving</h4>
+              <p class="text-justify">In analogue circuit and system course, various types of electrical circuit was
+                solved applying various electrical principles like KVL, KCL, Superposition theorem, Thevenin's theorem
+                ele. Various types of filter. Various types of circuit like Resonant circuit, RC circuit, RL circuit,
+                RLC circuit were introduced.</p>
+
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
 
-      <section id="research" class="my-10">
-<h1 class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black"> UNDERGRADUATE THESIS</h1>
-<div class="lg:w-2/4 flex flex-col mx-auto border w-11/12 p-4 lg:p-5 rounded-lg border-black justify-center">
-  <h4 class="text-xl font-semibold text-black">Title: TEA LEAF DISEASES DETECTION USING CNN WITH EXPLAINABLE-AI</h4>
-  <p>
-    Under review in ICAEEE 2024</p>
-    <p>Field: Machine Learning / Deep Learning</p>
-    <p>First Author</p>
-</div>
-      </section>
-
-      <section id="contact" class="my-12 lg:mb-24">
-
-        <div
-            class="manrope flex flex-col justify-center items-center  border-b border-t border-dashed lg:mb-10">
-            <h3 class="text-xl lg:text-3xl text-center font-extrabold m-6 text-black">Contact Me</h3>
+      <div class="mt-8 flex flex-col lg:flex-row gap-20 items-center ml-10">
+        <div>
+          <h2 class="text2xl font-bold">Some Professional and Interpersonal Skills:</h2>
+          <ul class="ml-5 ">
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Microsoft Office</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Adobe Photoshop</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Adobe Illustrator</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Video Editing</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Good Communication</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Team Work</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Leadership</li>
+          </ul>
         </div>
-    
-        <!-- form and infor section  -->
-        <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6 m-3 lg:m-0">
-    
-    <!-- info  -->
-     <div class="flex justify-center items-center border-2 py-5 mb-10 lg:mb-0 lg:py-3  flex-col gap-5 rounded-2xl">
-    
-        <!-- 1st  -->
-            <div class=" bg-[#BCED6D1A] w-5/6 p-4 rounded-2xl">
+
+
+        <div>
+          <h2 class="text2xl font-bold">Course Work:</h2>
+          <ul class="ml-5">
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Circuits and Systems I & II </li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Analogue Electronic Circuits I & II
+            </li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer"> Electrical Machines I &
+              II</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer"> Power Station, Switchgear and
+              Protection</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power System</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power System Operation
+              and Control</li>
+            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power Electronics</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section class="my-10 mx-2 lg:mx-0 space-y-3" id="training">
+      <h1 class="text-xl lg:text-3xl text-center font-extrabold text-black">TRAINING SUMMARY </h1>
+      <table class="lg:w-10/12 mx-auto">
+        <thead>
+          <tr class="border-2 text-center text-[15px] lg:text-xl text-black lg:font-semibold border-black">
+            <th class="border-2 w-1/5 border-black">Training Title </th>
+            <th class="border-2 w-1/5 border-black">Topic</th>
+            <th class="border-2 w-1/5  border-black">Institute</th>
+            <th class="border-2 w-1/5 border-black">Country</th>
+            <th class="border-2 w-1/5  border-black">Date</th>
+          </tr>
+        </thead>
+        <tbody class="text-center text-black text-[10px] lg:text-xs font-bold poppins">
+          <tr>
+            <td class="border-2 border-black p-1 w-1/5">Industrial Attachment</td>
+            <td class="border-2 border-black p-1 w-1/5">Power System Control & Operation, Power Station & Switchgear
+            </td>
+            <td class="border-2 border-black p-1 w-1/5">Ashuganj Power Station
+              Company Limited (APSCL)</td>
+            <td class="border-2 border-black p-1 w-1/5">Bangladesh</td>
+            <td class="border-2 border-black p-1 w-1/5">April 10, 2022</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="text-center">
+        <h2
+          class=" mb-3 text-xs text-red-600 font-extrabold hover:scale-105 lg:hover:scale-110 hover:text-pink-600 hover:font-bold lg:hover:font-extrabold">
+          Download My Training Report</h2>
+
+        <a class="text-white text-xs bg-[#FD6E0A] font-bold rounded-md mx-auto p-2 flex flex-row justify-center gap-1 w-fit items-center text-center "
+          href="./files/Attachment Report (1).pdf" download=""><i class="fa-solid fa-cloud-arrow-down text-xs"></i>
+          Download Now</a>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="research" class="my-10">
+      <h1 class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black"> UNDERGRADUATE THESIS</h1>
+      <div class="lg:w-2/4 flex flex-col mx-auto border w-11/12 p-4 lg:p-5 rounded-lg border-black justify-center">
+        <h4 class="text-xl font-semibold text-black">Title: TEA LEAF DISEASES DETECTION USING CNN WITH EXPLAINABLE-AI
+        </h4>
+        <p>
+          Under review in ICAEEE 2024</p>
+        <p>Field: Machine Learning / Deep Learning</p>
+        <p>First Author</p>
+      </div>
+    </section>
+
+    <section id="contact" class="my-12 lg:mb-24">
+
+      <div class="manrope flex flex-col justify-center items-center  border-b border-t border-dashed lg:mb-10">
+        <h3 class="text-xl lg:text-3xl text-center font-extrabold m-6 text-black">Contact Me</h3>
+      </div>
+
+      <!-- form and infor section  -->
+      <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6 m-3 lg:m-0">
+
+        <!-- info  -->
+        <div class="flex justify-center items-center border-2 py-5 mb-10 lg:mb-0 lg:py-3  flex-col gap-5 rounded-2xl">
+
+          <!-- 1st  -->
+          <div class=" bg-[#BCED6D1A] w-5/6 p-4 rounded-2xl">
             <div class="h-16 w-16 flex items-center justify-center mx-auto">
-                <img class="h-10" src="./images/Group 1171275317.png" alt="">
+              <img class="h-10" src="./images/Group 1171275317.png" alt="">
             </div>
             <div>
-                <h6 class="text-xl font-extrabold text-black manrope">Phone Number:</h6>
-                <p class="font-light text-black text-xs">+88-01851918442</p>
+              <h6 class="text-xl font-extrabold text-black manrope">Phone Number:</h6>
+              <p class="font-light text-black text-xs">+88-01851918442</p>
             </div>
-            </div>
-    
-            <!-- 2nd  -->
-            <div class=" bg-[#FDDD5F1A] p-4 w-5/6 rounded-2xl">
-                <div class="h-16 w-16 flex items-center justify-center mx-auto">
-                    <img class="h-10" src="./images/Group 1171275318.png" alt="">
-                </div>
-                <div>
-                    <h6 class="text-xl font-extrabold text-black manrope">Email:</h6>
-                    <p class="font-light text-black text-xs">hasanriazul4@gmail.com</p>
-                </div>
-                </div>
-    
-                <!-- 3rd  -->
-                <div class=" bg-[#629CF31A] p-4 w-5/6 rounded-2xl">
-                    <div class="h-16 w-16 flex items-center justify-center mx-auto">
-                        <img class="h-10" src="./images/Group 1171275321.png" alt="">
-                    </div>
-                    <div>
-                        <h6 class="text-xl font-extrabold text-black manrope">Location:</h6>
-                        <p class="font-light text-black text-xs">Nurpur, Shanir Akhra, Dhaka</p>
-                    </div>
-                    </div>
-    
-    </div>
-    
-    <!-- form  -->
-    <form class="lg:col-span-2" action="https://api.web3forms.com/submit" method="POST">
+          </div>
 
-      <input type="hidden" name="access_key" value="f0947ef0-0c66-442d-a974-ff6cb301b088">
-        <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
-            <div>
-                <label class="manrope text-xl font-bold text-black" for="">Your Name</label>
-                <input type="text" name="name" placeholder="Enter your full name" class="mt-2 input input-bordered w-full" required />
+          <!-- 2nd  -->
+          <div class=" bg-[#FDDD5F1A] p-4 w-5/6 rounded-2xl">
+            <div class="h-16 w-16 flex items-center justify-center mx-auto">
+              <img class="h-10" src="./images/Group 1171275318.png" alt="">
             </div>
             <div>
-                <label class="manrope text-xl font-bold text-black" for="">Your Email</label>
-                <input type="text" name="email" placeholder="Enter your email" class="mt-2 input input-bordered w-full" required />
+              <h6 class="text-xl font-extrabold text-black manrope">Email:</h6>
+              <p class="font-light text-black text-xs">hasanriazul4@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- 3rd  -->
+          <div class=" bg-[#629CF31A] p-4 w-5/6 rounded-2xl">
+            <div class="h-16 w-16 flex items-center justify-center mx-auto">
+              <img class="h-10" src="./images/Group 1171275321.png" alt="">
             </div>
             <div>
-                <label class="manrope text-xl font-bold text-black" for="">Subject</label>
-                <input type="text" name="subject" placeholder="Enter the Subject" class="mt-2 input input-bordered w-full" required />
+              <h6 class="text-xl font-extrabold text-black manrope">Location:</h6>
+              <p class="font-light text-black text-xs">Nurpur, Shanir Akhra, Dhaka</p>
             </div>
-            <div>
-                <label class="manrope text-xl font-bold text-black" for="">Phone Number</label>
-                <input type="text" name="number"  placeholder="Enter your phone number" class="mt-2 input input-bordered w-full" required/>
-            </div>
-            
-            
+          </div>
+
         </div>
-    
-        <div class="mt-6">
+
+        <!-- form  -->
+        <form class="lg:col-span-2" action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="f0947ef0-0c66-442d-a974-ff6cb301b088">
+          <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+            <div>
+              <label class="manrope text-xl font-bold text-black" for="">Your Name</label>
+              <input type="text" name="name" placeholder="Enter your full name" class="mt-2 input input-bordered w-full"
+                required />
+            </div>
+            <div>
+              <label class="manrope text-xl font-bold text-black" for="">Your Email</label>
+              <input type="text" name="email" placeholder="Enter your email" class="mt-2 input input-bordered w-full"
+                required />
+            </div>
+            <div>
+              <label class="manrope text-xl font-bold text-black" for="">Subject</label>
+              <input type="text" name="subject" placeholder="Enter the Subject" class="mt-2 input input-bordered w-full"
+                required />
+            </div>
+            <div>
+              <label class="manrope text-xl font-bold text-black" for="">Phone Number</label>
+              <input type="text" name="number" placeholder="Enter your phone number"
+                class="mt-2 input input-bordered w-full" required />
+            </div>
+
+
+          </div>
+
+          <div class="mt-6">
             <label class="manrope  text-xl font-bold text-black" for="">Description</label>
-            <textarea class="textarea text-[20px] lg:text-[20px] textarea-bordered w-full mt-2" rows="5" name="message" placeholder="Write your message"></textarea>
+            <textarea class="textarea text-[20px] lg:text-[20px] textarea-bordered w-full mt-2" rows="5" name="message"
+              placeholder="Write your message"></textarea>
+          </div>
+
+
+          <button
+            class=" btn mt-3 manrope font-bold text-white text-xl text-center bg-amber-500 hover:bg-black hover:opacity-55 w-fit lg:w-2/4">Send
+            Message</button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <!-- Social media section  -->
+      <section class="my-12 lg:mb-24">
+        <div class="flex flex-col justify-center items-center p-8 rounded-xl space-y-6 bg-[#13131305]">
+          <h4 class="text-[#131318] text-xl font-extrabold manrope">Social Media</h4>
+          <div class="flex gap-5 items-center">
+            <a href="https://www.facebook.com/dn.dipu.9/"><img class="w-5 h-5" src="./images/face.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/rhp3/"><img class="w-5 h-5" src="./images/link.png" alt=""></a>
+            <a href="https://www.instagram.com/p_r_i_n_c_eeee/"><img class="w-6 h-5" src="./images/inst.png" alt=""></a>
+
+          </div>
         </div>
-        
-         
-        <button class=" btn mt-3 manrope font-bold text-white text-xl text-center bg-amber-500 hover:bg-black hover:opacity-55 w-fit lg:w-2/4">Send Message</button>
-      </form>
-    </div>
 
-    
-    
-    
-        
-    
-    
-    
-    
-    
-            <!-- Social media section  -->
-            <section class="my-12 lg:mb-24">
-    <div class="flex flex-col justify-center items-center p-8 rounded-xl space-y-6 bg-[#13131305]">
-        <h4 class="text-[#131318] text-xl font-extrabold manrope">Social Media</h4>
-        <div class="flex gap-5 items-center">
-          <a href="https://www.facebook.com/dn.dipu.9/"><img class="w-5 h-5"src="./images/face.png" alt=""></a>
-          <a href="https://www.linkedin.com/in/rhp3/"><img class="w-5 h-5"src="./images/link.png" alt=""></a>
-          <a href="https://www.instagram.com/p_r_i_n_c_eeee/"><img class="w-6 h-5"src="./images/inst.png" alt=""></a>
-          
-        </div>
-    </div>
-    
-            </section>
+      </section>
 
 
-    </main>
-    <footer>
+  </main>
+  <footer>
 
-    </footer>
-    
+  </footer>
+
 </body>
+
 </html>
