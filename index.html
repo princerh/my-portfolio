@@ -39,6 +39,48 @@
     body{
       user-select: none;
     }
+
+    .montainer {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    
+      
+      font-size: 1.2rem;
+    }
+
+    .skill-box{
+
+color: #ddd;
+cursor: pointer;
+    }
+
+    .skill-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+   
+
+    .img{
+      height: 100px;
+      width: 100px;
+      position: relative;
+      border-radius: 45px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .skill-title h3 {
+      color: black;
+      margin: 0.5rem;
+    }
   </style>
 
   <!-- Customize your file  -->
@@ -111,7 +153,7 @@
 
         <div class="  mr-4 lg:mr-0 flex items-center">
 
-          <a id="down" href="./files/RESUME_Reazul_Hasan_Prince_ECE_17_RUET.pdf" download=""
+          <a id="down" href="./files/Reazul_Hasan_Prince_ECE_RUET-17.pdf" download=""
             class=" mr-8  "> <i
               class="fa-solid fa-circle-arrow-down animate-bounce mr-2 "></i>Download CV</a>
         </div>
@@ -121,16 +163,14 @@
       <div class="text-black flex flex-col my-auto lg:pl-12 p-6 lg:w-2/3">
         <h6 class="garamond font-bold text-xl lg:text-2xl">Hi, I am</h6>
         <h2 class="garamond font-bold text-2xl lg:text-3xl ">Reazul Hasan Prince</h2>
-        <p class="lg:pr-6 text-justify mt-7 poppins leading-5">I recently graduated from RUET majoring in department of
-          Electrical & Computer Engineering, where I gained expertise in both computer and electrical engineering.
-          During university, I decided to pursue a career in the power division industry, specifically in electrical
-          engineering. To prepare for this path, I underwent training in power system operation and control at Ashuganj
-          Power Division Company.
+        <p class="lg:pr-6 text-justify mt-7 poppins leading-5">I graduated from the Department of Electrical & Computer Engineering at RUET, where I built a strong foundation in both computer and electrical engineering. Throughout my studies, I developed a deep interest in computer vision research, especially using AI for classification tasks. My thesis focused on AI-based classification algorithms, which sparked my passion for applying machine learning to real-world problems.
           <br>
-          In addition to my practical experience, I conducted research in AI-based classification algorithms during my
-          academic journey. Outside of academics, football is my main hobby. I enjoy playing with friends and watching
-          European league matches. Traveling is another passion of mine, as it allows me to meet new people and enhance
-          my communication skills.
+          Alongside my academic work, I gained practical experience in web development through course projects that involved creating software solutions. This helped me strengthen my technical skills and apply what I learned in a hands-on way.
+          <br> 
+          With my background and passion for research, I’m excited to pursue a Master’s or Ph.D. focused on AI and computer vision, where I can continue exploring innovative solutions and contribute to advancements in this field.
+
+          
+          
         </p>
       </div>
       <div class=" w-2/3 lg:w-1/3 ">
@@ -176,97 +216,151 @@
     </section>
 
 
+    <section id="research" class="my-10">
+      <h1 class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black"> RESEARCH & PUBLICATIONS </h1>
+
+      <div class="flex flex-col lg:flex-row ">
+
+        <a class="block">
+
+          <div class=" flex flex-col mx-auto border w-8/12 p-2 lg:p-2 rounded-lg border-black justify-center  hover:bg-lime-200">
+            <h4 class="text-xl font-semibold text-black">TeaNet: Intelligent Lightweight Disease Detection in Tea Plants with Spatial Convolutional Neural Networks and Explainable AI
+            </h4>
+            <p>
+              Processing to publish in Nature Science</p>
+            <p>Field: Deep Learning</p>
+            <p>First Author</p>
+          </div>
+
+        </a>
+
+
+        <a href="https://www.researchgate.net/publication/382132792_CSXAI_a_lightweight_2D_CNN-SVM_model_for_detection_and_classification_of_various_crop_diseases_with_explainable_AI_visualization" class="block">
+          <div class=" flex flex-col mx-auto border w-8/12 p-2 lg:p-2 rounded-lg border-black justify-center  hover:bg-lime-200">
+            <h4 class="text-xl font-semibold text-black">CSXAI: a lightweight 2D CNN-SVM model for detection and classification of various crop diseases with explainable AI visualization</h4>
+            <p>Published in Frontiers in Plant Science</p>
+            <p>Field: Deep Learning</p>
+            <p>First Author</p>
+          </div>
+        </a>
+        
+
+
+
+      </div>
+    </section>
+
+
+
 
     <section class="my-10" id="skills">
       <div>
-        <h1 class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black">TECHNICAL SKILLS & INTERESTS</h1>
-        <div class="grid grid-cols-1  lg:grid-cols-3 gap-10 lg:gap-4 p-4 lg:p-0">
-          <div class="card card-compact flex flex-col justify-between bg-base-100 shadow-xl">
-            <div class="flex justify-center">
-              <div class=" border"><img class="w-20 h-16" src="./images/pngegg (1).png" alt=""></div>
-            </div>
-            <div class="card-body">
-              <h4 class="lg:text-xl font-bold poppins">MatLab SimuLink</h4>
-              <p class="text-justify">I have used matlab simulink during my academic life to experience various power
-                electronics circuit and to observe the current voltage relationship in the nodes by using multi meter,
-                voltmeter, ammeter.</p>
-              <p class="text-xs font-medium ">Power System Simulation:<a class="link ml-1"
-                  href="https://drive.google.com/drive/u/1/folders/17d1whSFg2QFQ76CFVRgLu0sEMv-cVD4E"
-                  target="_blank">Click Here</a></p>
-              <p class="text-xs font-medium ">Power Electronics Simulation: <a class="link ml-1"
-                  href="https://drive.google.com/drive/folders/1yXPOLu1njw6ggpdueSdtqF9Iy2Tcax0T" target="_blank">Click
-                  Here</a></p>
-            </div>
+        <h1 class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black">TECHNICAL SKILLS</h1>
+    
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 text-center">
+          <div>
+            <img src="./icons/c.png" alt="C logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">C</h3>
           </div>
-
-
-
-          <div class="card card-compact flex flex-col justify-between  bg-base-100 shadow-xl">
-            <div class="flex justify-center">
-              <div class=" border"><img class="w-20 h-16" src="./images/proteas.jpg" alt=""></div>
-            </div>
-            <div class="card-body">
-              <h4 class="lg:text-xl font-bold poppins">Proteas Simulator</h4>
-              <p class="text-justify">Proteas Simulator was used to perform the measurement of resistance, capacitance
-                and inductance of various electrical circuit.</p>
-              <p class="text-xs font-medium">Measurement Simulation: <a class="link ml-1"
-                  href="https://drive.google.com/drive/folders/1JKNFV7Se8DV2YmnartkfWq7_aXXI8HIN" target="_blank">Click
-                  Here</a></p>
-            </div>
+        
+          <div>
+            <img src="./icons/cplus.png" alt="C++ logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">C++</h3>
           </div>
-
-
-
-          <div class="card card-compact flex flex-col justify-between bg-base-100 shadow-xl">
-            <div class="flex justify-center">
-              <div class=" border"><img class="w-20 h-16" src="./images/3463652.png" alt=""></div>
-            </div>
-            <div class="card-body">
-              <h4 class="lg:text-xl font-bold poppins">Circuit Solving</h4>
-              <p class="text-justify">In analogue circuit and system course, various types of electrical circuit was
-                solved applying various electrical principles like KVL, KCL, Superposition theorem, Thevenin's theorem
-                ele. Various types of filter. Various types of circuit like Resonant circuit, RC circuit, RL circuit,
-                RLC circuit were introduced.</p>
-
-            </div>
+        
+          <div>
+            <img src="./icons/html.png" alt="HTML5 logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">HTML 5</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/css.png" alt="CSS3 logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">CSS 3</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/tailwind.png" alt="Tailwind CSS logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">Tailwind CSS</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/python.png" alt="Python logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">Python</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/tensorflow.png" alt="Tensorflow logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">Tensorflow</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/Keras.png" alt="Keras logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">Keras</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/javas.png" alt="JavaScript logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">JavaScript</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/kisspng-react-javascript-angularjs-ionic-atom-5b154be6947457.3471941815281223426081.png" alt="React logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">React</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/node.png" alt="Node.js logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">Node Js</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/mysql.png" alt="MySQL logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">MySQL</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/mongo.png" alt="MongoDB logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">MongoDB</h3>
+          </div>
+        
+          <div>
+            <img src="./icons/github.png" alt="Github logo" class="mx-auto w-12 md:w-16 lg:w-20">
+            <h3 class="mt-2 text-sm md:text-base lg:text-lg">Github</h3>
           </div>
         </div>
-      </div>
-
-      <div class="mt-8 flex flex-col lg:flex-row gap-20 items-center ml-10">
-        <div>
-          <h2 class="text2xl font-bold">Some Professional and Interpersonal Skills:</h2>
-          <ul class="ml-5 ">
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Microsoft Office</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Adobe Photoshop</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Adobe Illustrator</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Video Editing</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Good Communication</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Team Work</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Leadership</li>
-          </ul>
+        
+        
+    
+        <div class="mt-8 flex flex-col lg:flex-row gap-20 items-center ">
+          <div class="ml-14">
+            <h2 class="text-2xl font-bold">Some Professional and Interpersonal Skills:</h2>
+            <ul class="ml-5">
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Microsoft Office</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Adobe Photoshop</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Adobe Illustrator</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Video Editing</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Good Communication</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Team Work</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Leadership</li>
+            </ul>
+          </div>
+    
+          <div>
+            <h2 class="text-2xl font-bold">Course Work:</h2>
+            <ul class="ml-5">
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Data Structure and Algorithms</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Object Oriented Programming</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Database Systems</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Operating Systems</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Computer Networks</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Computer Architecture</li>
+              <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Microprocessor & Assembly Language</li>
+            </ul>
+          </div>
         </div>
-
-
-        <div>
-          <h2 class="text2xl font-bold">Course Work:</h2>
-          <ul class="ml-5">
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Circuits and Systems I & II </li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Analogue Electronic Circuits I & II
-            </li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer"> Electrical Machines I &
-              II</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer"> Power Station, Switchgear and
-              Protection</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power System</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power System Operation
-              and Control</li>
-            <li class="list-decimal hover:transform hover:font-bold cursor-pointer">Power Electronics</li>
-          </ul>
-        </div>
-      </div>
       </div>
     </section>
+    
 
 
     <section class="my-10 mx-2 lg:mx-0 space-y-3" id="training">
@@ -310,17 +404,7 @@
 
 
 
-    <section id="research" class="my-10">
-      <h1 class="text-xl lg:text-3xl text-center font-extrabold mb-6 text-black"> UNDERGRADUATE THESIS</h1>
-      <div class="lg:w-2/4 flex flex-col mx-auto border w-11/12 p-4 lg:p-5 rounded-lg border-black justify-center">
-        <h4 class="text-xl font-semibold text-black">Title: TEA LEAF DISEASES DETECTION USING CNN WITH EXPLAINABLE-AI
-        </h4>
-        <p>
-          Under review in ICAEEE 2024</p>
-        <p>Field: Machine Learning / Deep Learning</p>
-        <p>First Author</p>
-      </div>
-    </section>
+
 
     <section id="contact" class="my-12 lg:mb-24">
 
@@ -428,6 +512,7 @@
             <a href="https://www.facebook.com/dn.dipu.9/"><img class="w-5 h-5" src="./images/face.png" alt=""></a>
             <a href="https://www.linkedin.com/in/rhp3/"><img class="w-5 h-5" src="./images/link.png" alt=""></a>
             <a href="https://www.instagram.com/p_r_i_n_c_eeee/"><img class="w-6 h-5" src="./images/inst.png" alt=""></a>
+            <a href="https://github.com/princerh"><img class="w-8 h-8" src="./icons/giticon.png" alt=""></a>
 
           </div>
         </div>
